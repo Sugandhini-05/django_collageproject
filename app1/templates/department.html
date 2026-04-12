@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Departments</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success">Add Department</button>
+</form>
+
+<hr>
+
+<table class="table table-bordered">
+<tr>
+    <th>ID</th><th>Name</th><th>Code</th><th>Action</th>
+</tr>
+{% for d in data %}
+<tr>
+    <td>{{ d.id }}</td>
+    <td>{{ d.name }}</td>
+    <td>{{ d.code }}</td>
+    <td>
+        <form method="post" action="/delete-dept/{{ d.id }}/">
+            {% csrf_token %}
+            <!-- <input type="password" name="password" placeholder="Enter admin password"> -->
+            <!-- <button class="btn btn-danger">Delete</button> -->
+            <a href="/delete-dept/{{ d.id }}/" class="btn btn-danger">Delete</a>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

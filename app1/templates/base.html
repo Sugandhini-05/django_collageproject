@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-dark bg-dark px-4">
+    <span class="navbar-brand mb-0 h1">🎓 College Admin</span>
+</nav> -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-dark bg-dark px-4">
+    <span class="navbar-brand mb-0 h1">🎓 College Admin</span>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+
+    <a class="navbar-brand" href="/dashboard/">🎓 College Admin</a>
+
+    <div class="ms-auto">
+        <a href="/dashboard/" class="btn btn-light me-2">Dashboard</a>
+        <!-- <a href="/department/" class="btn btn-primary me-2">Departments</a>
+        <a href="/teacher/" class="btn btn-warning me-2">Teachers</a>
+        <a href="/student/" class="btn btn-success">Students</a> -->
+    </div>
+
+</nav>
+
+
+
+<!-- Content -->
+<div class="container mt-5">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
