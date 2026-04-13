@@ -97,7 +97,7 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.mysql",
-            "NAME": "joins",
+            "NAME": "suggu",
             "USER": "root",
             "PASSWORD": "Suggu@mysql5",
             "HOST": "localhost",

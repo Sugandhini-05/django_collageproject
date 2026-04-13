@@ -9,8 +9,8 @@
 </form>
 
 <hr>
-
-<table class="table table-bordered">
+<div class="table-responsive">
+    <table class="table table-bordered">
 <tr>
     <th>ID</th><th>Name</th><th>Email</th><th>Department</th><th>Action</th>
 </tr>
@@ -30,5 +30,11 @@
 </tr>
 {% endfor %}
 </table>
+</div>
+<a href="/dashboard/" class="btn btn-secondary mb-3">⬅ Back to Dashboard</a>
+
+
+
+
 
 {% endblock %}

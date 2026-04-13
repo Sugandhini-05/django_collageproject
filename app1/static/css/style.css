@@ -14,3 +14,33 @@ body {
 h2 {
     font-weight: bold;
 }
+/* Responsive text */
+h2 {
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+/* Card spacing */
+.card {
+    border-radius: 15px;
+}
+
+/* Button full width on mobile */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Table text small on mobile */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
